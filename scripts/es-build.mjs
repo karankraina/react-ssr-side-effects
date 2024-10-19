@@ -26,3 +26,17 @@ build({
   outfile: 'lib/index.esm.js',
   format: 'esm',
 });
+
+build({
+  ...shared,
+  format: 'cjs',
+  outfile: 'lib/index.min.cjs',
+  minify: true,
+});
+
+build({
+  ...shared,
+  outfile: 'lib/index.esm.min.js',
+  format: 'esm',
+  minify: true
+});

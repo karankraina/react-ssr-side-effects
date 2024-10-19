@@ -1,7 +1,7 @@
 {
   "name": "react-ssr-side-effects",
   "version": "1.0.1",
-  "description": "",
+  "description": "Thread safe fork of react-side-effect",
   "type": "module",
   "sideEffects": false,
   "main": "./lib/index.cjs",
@@ -17,7 +17,6 @@
     "README.md",
     "lib/"
   ],
-  "author": "",
   "license": "MIT",
   "devDependencies": {
     "esbuild": "^0.24.0",
@@ -25,5 +24,20 @@
   },
   "peerDependencies": {
     "react": "^16.6.0 || ^17.0.0 || ^18.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karankraina/react-ssr-side-effects.git"
+  },
+  "keywords": [
+    "react",
+    "server side rendering",
+    "javascript",
+    "ssr"
+  ],
+  "author": "Karan Raina <karanraina1996@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/karankraina/react-ssr-side-effects/issues"
+  },
+  "homepage": "https://github.com/karankraina/react-ssr-side-effects#readme"
 }
