@@ -1,11 +1,37 @@
 {
   "name": "react-ssr-side-effects",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./lib/index.cjs",
+  "module": "./lib/index.esm.js",
   "scripts": {
+    "build": "npm run build:bundle",
+    "build:bundle": "node --experimental-modules scripts/es-build.mjs",
+    "clean": "rm -rf lib",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "lib/"
+  ],
   "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/preset-env": "^7.25.8",
+    "@babel/preset-react": "^7.25.7",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-terser": "^0.4.4",
+    "gzip-size": "^7.0.0",
+    "pretty-bytes": "^6.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "rollup": "^4.24.0"
+  },
+  "peerDependencies": {
+    "react": "^16.6.0 || ^17.0.0 || ^18.0.0"
+  }
 }
