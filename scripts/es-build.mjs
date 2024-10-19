@@ -5,7 +5,7 @@ const entryPoint = join(import.meta.dirname, '../src/index.jsx')
 
 import pkg from '../package.json' assert { type: "json" };
 
-const { dependencies, peerDependencies } = pkg
+const { dependencies = {}, peerDependencies = {} } = pkg
 
 const external = Object.keys(dependencies).concat(Object.keys(peerDependencies))
 
